@@ -1,0 +1,33 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Peca {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int codPeca1, numPeca1, codPeca2, numPeca2;
+		double valorUnitPeca1, valorUnitPeca2, total;
+		
+		codPeca1 = sc.nextInt();
+		numPeca1 = sc.nextInt();
+		valorUnitPeca1 = sc.nextDouble();
+		codPeca2 = sc.nextInt();
+		numPeca2 = sc.nextInt();
+		valorUnitPeca2 = sc.nextDouble();
+
+		total  = (numPeca1 * valorUnitPeca1)+(numPeca2 * valorUnitPeca2);
+		
+		System.out.print(codPeca1);
+		System.out.print(numPeca1);
+		System.out.println(valorUnitPeca1);
+		System.out.print(codPeca2);
+		System.out.print(numPeca2);
+		System.out.print(valorUnitPeca2);
+		System.out.println("VALOR A PAGAR: R$ ");
+		
+		sc.close();
+	}
+
+}
